@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <form method="post" action="/process">
+      <p>Name: <input type="text" name="username" required /></p>
+      <p>Email: <input type="email" name="email" required /></p>
+      <p>Password: <input type="password" name="password" required /></p>
+      <p>Age: <input   
+          name="age"
+          id="number"
+          type="number"
+          class="form-control"
+          min="19"
+          max="100"
+          placeholder="Your age"
+         /> 
+     </p>
+      <p>
+        Gender:
+        <select name="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+          <option value="pnts">Prefer Not To Say</option>
+        </select>
+      </p>
+      <p>Birthday: <input type="date" name="birthday" /></p>
+
+      <p>
+        Fave Sanrio Character:
+        <select name="sanrio">
+          <option value="hello kitty">Hello Kitty</option>
+          <option value="choco cat">Chococat</option>
+          <option value="cinnamonroll">Cinnamonroll</option>
+          <option value="kuromi">Kuromi</option>
+          <option value="my melody">My Melody</option>
+          <option value="pochacco">Pochacco</option>
+          <option value="pompompurin">Pompompurin</option>
+          <option value="spottie dottie">Spottie Dottie</option>
+          <option value="dear daniel">Dear Daniel</option>
+        </select>
+      </p>
+
+      <p>Website: <input type="url" name="website" /></p>
+      <p><input type="hidden" name="userID" value="232" /></p>
+
+      <p>Bio: <textarea name="bio"></textarea></p>
+
+      <p>
+        <button
+          id="submit"
+          type="submit"
+          onclick="alert('Thanks!! 🥳 🎉')"
+          class="submit-button"
+        >
+          Submit
+        </button>
+      </p>
+    </form>
+    <script src="script.js"></script>
+
+  <br />
+    <footer>
+      <a name="bottom">Made with 🖤 by Majo.</a>
+      <div id="wcb" class="carbonbadge"></div>
+      <script
+        src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js"
+        defer
+      ></script>
+      <br />
+
+    </footer>
+  </body>
+</html>
